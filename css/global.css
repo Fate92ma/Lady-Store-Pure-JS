@@ -1,0 +1,397 @@
+/*
+
+Template Name: Lady Store
+Template Url: https://fate92ma.github.io/Lady-Store-Pure-JS
+Contact Me: fatema131khaled@gmail.com
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Start Template Setting */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea,
+a {
+    font-family: "Lato" !important;
+}
+
+input:not([type="checkbox"]),
+button,
+select {
+    width: 100%;
+    outline: 0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 9px auto;
+    display: block;
+    font-size: 16px
+}
+
+input:focus {
+    border-bottom: 1px solid var(--dark)
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    width: fit-content
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --light: #ffe4c4;
+    --subClr: #6E446C;
+    --dark: #C71585;
+    --price: #DA506A;
+    --red: #cb2431;
+    --white: #fff;
+    --border: #ddd
+}
+
+.activePage {
+    color: var(--subClr)
+}
+
+.active {
+    border-bottom: 4px double var(--red);
+    color: var(--red) !important
+}
+
+.smooth,
+.currentItem,
+.inputs,
+.up_signUp,
+.in_signIn,
+.myCartInfo,
+.clearCart,
+.toCheckOut,
+.checkout button,
+.myHearts,
+button.quickView,
+.removeHeart,
+.clearWishlist,
+.myProduct,
+fieldset,
+.newsletter button,
+.userInfo,
+.saveEdits,
+.backProfile,
+.addToCart {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s
+}
+
+.inputs:hover,
+.myProduct:hover,
+.currentItem:hover,
+.myCartInfo:hover,
+.myHearts:hover,
+fieldset:hover,
+.userInfo:hover {
+    -webkit-box-shadow: 0px 0px 20px var(--border);
+    -moz-box-shadow: 0px 0px 20px var(--border);
+    -ms-box-shadow: 0px 0px 20px var(--border);
+    -o-box-shadow: 0px 0px 20px var(--border);
+    box-shadow: 0px 0px 20px var(--border)
+}
+
+.title {
+    font-size: 34px;
+    text-align: center;
+    padding: 5px
+}
+
+center {
+    font-weight: normal;
+    color: var(--subClr);
+    font-size: 34px
+}
+
+/* End Template Setting */
+
+/* Start Header */
+
+header {
+    background: var(--light);
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1
+}
+
+.headerContainer {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo {
+    flex: 1;
+    cursor: pointer;
+    align-items: center;
+    display: flex
+}
+
+.logo h1 {
+    margin: 5px;
+    color: var(--dark);
+    font-family: cursive;
+    font-size: 32px
+}
+
+.headerContainer nav {
+    flex: 1
+}
+
+nav #user_List {
+    display: none
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none
+}
+
+nav ul li a {
+    text-decoration: none;
+    outline: 0;
+    font-size: 20px;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+    cursor: pointer;
+    color: var(--dark)
+}
+
+.cartIcon,
+.favourite {
+    position: relative
+}
+
+#itemsCountSapn,
+#favCountSapn {
+    color: var(--light);
+    position: absolute;
+    background: var(--subClr);
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    top: -10px;
+    left: 10px
+}
+
+.myBar {
+    cursor: pointer;
+    color: var(--dark);
+    display: none !important
+}
+
+@media (max-width: 1100px) {
+    .headerContainer {
+        padding: 0 10px;
+        width: 100%
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        flex: none
+    }
+
+    .headerContainer nav {
+        z-index: 1;
+        display: none
+    }
+
+    nav ul li a {
+        margin: 8px
+    }
+
+    .myBar {
+        display: block !important
+    }
+}
+
+@media (max-width: 300px) {
+    .headerContainer {
+        padding: 0 5px
+    }
+
+    .logo h1 {
+        font-size: 24px
+    }
+}
+
+/* Custom Classes */
+
+.miniNav {
+    border-top: 1px dotted var(--dark);
+    border-bottom: 1px dotted var(--dark);
+    display: flex !important;
+    background: var(--light);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    left: 0
+}
+
+.mini_ulInNav {
+    text-align: center;
+    flex-direction: column
+}
+
+/* End Header */
+
+/* Start Footer */
+
+footer {
+    background: var(--light)
+}
+
+.footerContainer {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+    padding: 40px 10px
+}
+
+footer div {
+    margin: 5px;
+    flex: 1
+}
+
+footer div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--subClr)
+}
+
+footer div:nth-of-type(1) h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: var(--dark);
+    font-family: cursive
+}
+
+footer div:nth-of-type(1) p {
+    line-height: 26px
+}
+
+footer div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+footer ul li {
+    list-style: none
+}
+
+footer ul li a {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 14px;
+    color: var(--subClr)
+}
+
+footer ul li:last-child a {
+    margin-bottom: 0
+}
+
+footer ul h3 {
+    text-align: center;
+    margin-bottom: 14px;
+    color: var(--price)
+}
+
+footer ul ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+footer ul ul li {
+    margin: 4px
+}
+
+@media (max-width: 1100px) {
+    .footerContainer {
+        width: 100%
+    }
+}
+
+@media (max-width: 800px) {
+    .footerContainer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    footer div:nth-of-type(1) {
+        align-items: center
+    }
+
+    footer div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column
+    }
+
+    footer div:nth-of-type(2) ul:nth-of-type(1) {
+        margin-bottom: 14px
+    }
+}
+
+/* End Footer */
+
+/* Start Go Top */
+
+#goTop {
+    background: var(--dark);
+    color: var(--light);
+    position: fixed;
+    z-index: 1;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    border-radius: 50%
+}
+
+/* End Go Top */

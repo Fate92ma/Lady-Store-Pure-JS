@@ -1,0 +1,124 @@
+/************************************* Start My Cart Page *************************************/
+
+/* Start My Cart */
+
+.myCartPage {
+   margin: 150px auto 100px
+}
+
+.return {
+    display: block;
+    color: var(--red);
+    text-align: center
+}
+
+.myCartInfo {
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--light);
+    width: 50%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px auto
+}
+
+.smallItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px
+}
+
+.smallItem div p:nth-of-type(2) {
+    margin: 5px 0
+}
+
+.smallItem .quickView,
+.smallItem .removeItem,
+.smallItem .fa-plus,
+.smallItem .fa-minus {
+    cursor: pointer;
+    color: var(--dark)
+}
+
+#itemsPrice {
+    color: var(--price)
+}
+
+#itemsCount,
+#itemsPrice {
+    text-align: center
+}
+
+.clearCart {
+    border: 1px solid var(--red);
+    background: var(--red);
+    color: var(--white)
+}
+
+.clearCart:hover {
+    color: var(--red);
+    background: var(--white)
+}
+
+.toCheckOut {
+    border: 1px solid var(--price);
+    color: var(--white);
+    background: var(--price)
+}
+
+.toCheckOut:hover {
+    color: var(--price);
+    background: var(--white)
+}
+
+@media (max-width: 1100px) {
+    .myCartInfo {
+        width: 60%
+    }
+}
+
+@media (max-width: 900px) {
+    .myCartInfo {
+        width: 70%
+    }
+}
+
+@media (max-width: 800px) {
+    .myCartInfo {
+        width: 80%
+    }
+}
+
+@media (max-width: 700px) {
+    .myCartInfo {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .myCartInfo {
+        width: 98%
+    }
+}
+
+@media (max-width: 350px) {
+    .smallItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .smallItem div:nth-of-type(2) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10px
+    }
+
+    .smallItem div:nth-of-type(2) .itemCount {
+        margin: 0 10px
+    }
+}
+
+/* End My Cart */
+
+/************************************* End My Cart Page *************************************/

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lady Store - CheckOut</title>
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/checkOut.css">
+    <link rel="stylesheet" href="css/vendors/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <section class="headerContainer">
+
+            <div class="logo">
+                <img src="img/header/logo.png" alt="logoImage">
+                <h1>LadyStore</h1>
+            </div>
+
+            <nav>
+                <ul id="global_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="signIn.html">Sign In</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
+                </ul>
+
+                <ul id="user_List">
+                    <li><a class="userDom" href="profile.html">username</a></li>
+
+                    <li class="cartIcon"><a href="myCart.html"><i class="fa fa-shopping-basket fa-lg"></i></a>
+                        <span id="itemsCountSapn">0</span>
+                    </li>
+
+                    <li class="favourite"><a href="myWishlist.html"><i class="fa fa-heart fa-lg"></i></a>
+                        <span id="favCountSapn">0</span>
+                    </li>
+
+                    <li><a class="signOut"><i class="fa fa-sign-out fa-lg"></i></a></li>
+                </ul>
+            </nav>
+
+            <i class="fa fa-bars fa-2x myBar"></i>
+
+        </section>
+    </header>
+    <!-- ./ Header-->
+
+    <!-- Check Out -->
+    <section class="checkout">
+
+        <h2 class="title"><i class="fa fa-truck fa-flip-horizontal fa-lg"></i> Shipping</h2>
+
+        <section class="inputs">
+
+            <input type="text" placeholder="First Name">
+
+            <input type="text" placeholder="Last Name">
+
+            <input type="text" placeholder="Shipping Address">
+
+            <input type="text" placeholder="Town / City">
+
+            <input type="text" placeholder="Zip / Postcode">
+
+            <input type="email" placeholder="Email">
+
+            <input type="number" placeholder="Phone Number">
+
+            <select>
+                <option hidden>Card Type</option>
+                <option value="visa">Visa</option>
+                <option value="discover">Discover</option>
+                <option value="americanExpress">American Express</option>
+                <option value="masterCard">MasterCard</option>
+            </select>
+
+            <input type="number" placeholder="Credit Card Number">
+
+            <input type="number" placeholder="Card CVV">
+
+            <input type="number" placeholder="Expiration Date">
+
+            <div class="orderInfo"></div>
+
+            <div class="orderTotal"></div>
+
+            <div class="toBuy">
+                <span class="fees"></span>
+
+                <button class="purchase">Purchase Order</button>
+            </div>
+
+        </section>
+
+    </section>
+    <!-- ./ Check Out -->
+
+    <!-- Overlay -->
+    <div id="overlay">
+
+        <img src="img/checkOut/loading.gif" alt="loading image">
+
+    </div>
+    <!-- ./ Overlay -->
+
+    <!-- Footer -->
+    <footer>
+
+        <section class="footerContainer">
+
+            <div>
+                <img src="img/header/logo.png" alt="logoImage">
+                <h1>LadyStore</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus, placeat reiciendis est aperiam tempora quos eveniet similique vero quo.</p>
+            </div>
+
+            <div>
+                <ul>
+                    <h3>Supported Payment</h3>
+                    <ul>
+                        <li><i class="fa fa-cc-visa fa-2x"></i></li>
+                        <li><i class="fa fa-cc-mastercard fa-2x"></i></li>
+                        <li><i class="fa fa-cc-discover fa-2x"></i></li>
+                        <li><i class="fa fa-cc-paypal fa-2x"></i></li>
+                        <li><i class="fa fa-credit-card fa-2x"></i></li>
+                        <li><i class="fa fa-cc-stripe fa-2x"></i></li>
+                        <li><i class="fa fa-cc-diners-club fa-2x"></i></li>
+                    </ul>
+                </ul>
+            </div>
+
+        </section>
+
+    </footer>
+    <!-- ./ Footer-->
+
+    <!-- Go Top -->
+    <div id="goTop">
+
+        <i class="fa fa-arrow-up fa-lg"></i>
+
+    </div>
+    <!-- ./ Go Top -->
+
+    <!-- -->
+    <script src="js/globalStyle.js"></script>
+    <script src="js/userScript.js"></script>
+    <script src="js/userIcon.js"></script>
+    <script src="js/checkOut.js"></script>
+
+</body>
+
+</html>

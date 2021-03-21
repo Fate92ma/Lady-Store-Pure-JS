@@ -1,0 +1,65 @@
+/************************************* Start Item Details Page *************************************/
+
+/* Start Item Details */
+
+.itemDetails {
+    width: 96%;
+    margin: 150px auto 100px
+}
+
+.currentItem {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border: 1px solid var(--light);
+    justify-content: center
+}
+
+.currentItem h3 {
+    color: var(--subClr);
+    font-size: 24px
+}
+
+.currentItem img {
+    width: 200px;
+    margin: 15px auto
+}
+
+.currentItem p {
+    margin-bottom: 10px
+}
+
+.allColor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.itemColor {
+    margin: 3px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%
+}
+
+.itemDesc {
+    line-height: 28px;
+    color: var(--subClr)
+}
+
+.itemPrice {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--price)
+}
+
+.itemLeft {
+    color: var(--red);
+    font-weight: bold
+}
+
+/* End Item Details */
+
+/************************************* End Item Details Page *************************************/

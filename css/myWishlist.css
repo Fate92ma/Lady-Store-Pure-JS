@@ -1,0 +1,105 @@
+/************************************* Start My Wishlist Page *************************************/
+
+/* Start My Wishlist */
+
+.myFavPage {
+    margin: 150px auto 100px
+}
+
+.myHearts {
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--light);
+    width: 50%;
+    margin: 10px auto
+}
+
+button.quickView {
+    border: 1px solid var(--price);
+    color: var(--white);
+    background: var(--price)
+}
+
+button.quickView:hover {
+    color: var(--price);
+    background: var(--white)
+}
+
+.removeHeart {
+    border: 1px solid var(--dark);
+    background: var(--dark);
+    color: var(--white)
+}
+
+.removeHeart:hover {
+    color: var(--dark);
+    background: var(--white)
+}
+
+.clearWishlist {
+    border: 1px solid var(--red);
+    background: var(--red);
+    color: var(--white)
+}
+
+.clearWishlist:hover {
+    color: var(--red);
+    background: var(--white)
+}
+
+.favItem {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex
+}
+
+.favItem div {
+    flex: 1
+}
+
+.favItem img {
+    margin: 10px auto;
+    width: 200px
+}
+
+@media (max-width: 1100px) {
+    .myHearts {
+        width: 60%
+    }
+}
+
+@media (max-width: 900px) {
+    .myHearts {
+        width: 70%
+    }
+}
+
+@media (max-width: 800px) {
+    .myHearts {
+        width: 80%
+    }
+}
+
+@media (max-width: 700px) {
+    .myHearts {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .myHearts {
+        width: 98%
+    }
+}
+
+@media (max-width: 500px) {
+    .favItem {
+        flex-direction: column
+    }
+}
+
+/* End My Wishlist */
+
+/************************************* End My Wishlist Page *************************************/

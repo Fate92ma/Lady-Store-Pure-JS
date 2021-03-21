@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lady Store - Home</title>
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/vendors/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <section class="headerContainer">
+
+            <div class="logo">
+                <img src="img/header/logo.png" alt="logoImage">
+                <h1>LadyStore</h1>
+            </div>
+
+            <nav>
+                <ul id="global_list">
+                    <li><a class="activePage">Home</a></li>
+                    <li><a href="signIn.html">Sign In</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
+                </ul>
+
+                <ul id="user_List">
+                    <li><a class="userDom" href="profile.html">username</a></li>
+
+                    <li class="cartIcon"><a href="myCart.html"><i class="fa fa-shopping-basket fa-lg"></i></a>
+                        <span id="itemsCountSapn">0</span>
+                    </li>
+
+                    <li class="favourite"><a href="myWishlist.html"><i class="fa fa-heart fa-lg"></i></a>
+                        <span id="favCountSapn">0</span>
+                    </li>
+
+                    <li><a class="signOut"><i class="fa fa-sign-out fa-lg"></i></a></li>
+                </ul>
+            </nav>
+
+            <i class="fa fa-bars fa-2x myBar"></i>
+        </section>
+    </header>
+    <!-- ./ Header-->
+
+    <!-- Home -->
+    <section class="home">
+
+        <mark>“The best thing is to look natural, but it takes makeup to look natural.”</mark>
+
+    </section>
+    <!-- ./ Home -->
+
+    <!-- PreHeader -->
+    <section class="preHeader">
+
+        <p>Due to challenges caused by coronavirus, we're providing free shipping for orders above 250$, shop now!</p>
+
+        <i class="fa fa-times fa-lg"></i>
+
+    </section>
+    <!-- ./ PreHeader -->
+
+    <!-- Products -->
+    <section class="products">
+
+        <div class="products_card">
+
+            <h2 class="title">Start Shopping Now</h2>
+
+            <input type="text" placeholder="type product name..." id="input">
+
+            <ul class="goList">
+
+                <li class="4all active">All</li>
+                <li class="4lips">Lips</li>
+                <li class="4face">Face</li>
+                <li class="4nails">Nails</li>
+                <li class="ascending">Low-High</li>
+                <li class="descending">High-Low</li>
+                <li class="topRating">Top Rated</li>
+                <li class="avaiClrs">Available Colors</li>
+
+            </ul>
+
+        </div>
+
+        <section id="displayProducts"></section>
+    </section>
+    <!-- ./ Products -->
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <div class="newsletterContainer">
+
+            <h2 class="title"><i class="fa fa-envelope-o"></i> Subscribe to our newsletter</h2>
+
+            <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+
+            <input type="email" placeholder="enter your email">
+
+            <button>Subscribe</button>
+
+        </div>
+
+    </section>
+    <!-- ./Newsletter -->
+
+    <!-- Footer -->
+    <footer>
+
+        <section class="footerContainer">
+
+            <div>
+                <img src="img/header/logo.png" alt="logoImage">
+                <h1>LadyStore</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus, placeat reiciendis est aperiam tempora quos eveniet similique vero quo.</p>
+            </div>
+
+            <div>
+                <ul>
+                    <h3>Supported Payment</h3>
+                    <ul>
+                        <li><i class="fa fa-cc-visa fa-2x"></i></li>
+                        <li><i class="fa fa-cc-mastercard fa-2x"></i></li>
+                        <li><i class="fa fa-cc-discover fa-2x"></i></li>
+                        <li><i class="fa fa-cc-paypal fa-2x"></i></li>
+                        <li><i class="fa fa-credit-card fa-2x"></i></li>
+                        <li><i class="fa fa-cc-stripe fa-2x"></i></li>
+                        <li><i class="fa fa-cc-diners-club fa-2x"></i></li>
+                    </ul>
+                </ul>
+            </div>
+
+        </section>
+
+    </footer>
+    <!-- ./ Footer-->
+
+    <!-- Go Top -->
+    <div id="goTop">
+
+        <i class="fa fa-arrow-up fa-lg"></i>
+
+    </div>
+    <!-- ./ Go Top -->
+
+    <!-- -->
+    <script src="js/globalStyle.js"></script>
+    <script src="js/removeAd.js"></script>
+    <script src="js/userScript.js"></script>
+    <script src="js/drawData.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/addToWishlist.js"></script>
+    <script src="js/toQuickView.js"></script>
+    <script src="js/searchfn.js"></script>
+    <script src="js/goList.js"></script>
+    <script src="js/sort.js"></script>
+
+</body>
+
+</html>

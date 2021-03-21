@@ -1,0 +1,307 @@
+/***************************************** Start Home Page *****************************************/
+
+/* Start Home */
+
+.home {
+    background-image: url(../img/home/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+
+.home mark {
+    background: var(--dark);
+    color: var(--light);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    background: #ad1457e0;
+    padding: 10px;
+    top: 60%;
+    text-align: center;
+    font-size: 36px
+}
+
+/* End Home */
+
+/* PreHeader Start */
+
+.preHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b0a2d5a1;
+    color: var(--subClr);
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 22px;
+    padding: 10px
+}
+
+.preHeader .fa-times {
+    cursor: pointer
+}
+
+@media (max-width: 800px) {
+    .preHeader {
+        text-align: center;
+        flex-direction: column
+    }
+
+    .fa-times {
+        margin-top: 10px
+    }
+}
+
+/* PreHeader End */
+
+/* Start Products */
+
+.products {
+    margin: 150px auto
+}
+
+.products_card {
+    width: 50%;
+    margin: auto
+}
+
+.products_card .title {
+    font-family: cursive;
+    color: var(--price)
+}
+
+.goList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 20px auto;
+    color: var(--subClr)
+}
+
+.goList li {
+    cursor: pointer
+}
+
+#displayProducts {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.myProduct {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 24%;
+    margin: 5px;
+    border: 1px solid var(--light)
+}
+
+.myProduct h3 {
+    color: var(--price)
+}
+
+.myProduct h3,
+.myProduct p {
+    flex: 1
+}
+
+.myProduct img {
+    margin: 14px auto
+}
+
+.itemPrice {
+    font-weight: bold;
+    margin-bottom: 9px;
+    color: var(--dark)
+}
+
+.avaColor {
+    color: var(--subClr)
+}
+
+.avaColor span {
+    font-weight: bold;
+    color: var(--dark)
+}
+
+.productBtns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 9px
+}
+
+.productBtns button {
+    margin: 4px
+}
+
+.addToCart {
+    color: var(--price);
+    background: var(--light);
+    padding: 7px;
+    font-size: 18px
+}
+
+.addToCart:hover {
+    color: var(--light);
+    background: var(--price);
+}
+
+.addToWish,
+.quickView {
+    background: transparent;
+    padding: 0;
+    display: inline-block;
+    font-size: 24px
+}
+
+.addToWish {
+    color: var(--red)
+}
+
+.quickView::after {
+    content: '\f06e';
+    font-family: FontAwesome;
+    color: var(--subClr)
+}
+
+@media (max-width: 1100px) {
+    .products_card {
+        width: 60%
+    }
+
+    .myProduct {
+        flex-basis: 32%
+    }
+}
+
+@media (max-width: 900px) {
+    .products_card {
+        width: 70%
+    }
+}
+
+@media (max-width: 800px) {
+    .products_card {
+        width: 80%
+    }
+
+    .myProduct {
+        flex-basis: 48%
+    }
+}
+
+@media (max-width: 700px) {
+    .products_card {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .products_card {
+        width: 94%
+    }
+
+    .myProduct {
+        flex-basis: 94%
+    }
+
+    .goList {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .goList li {
+        margin-bottom: 10px
+    }
+
+    .goList li:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media (max-width: 350px) {
+    .productBtns {
+        width: 99%
+    }
+}
+
+/* End Products */
+
+/* Start Newsletter */
+
+.newsletter {
+    background: var(--border);
+    padding: 20px 10px;
+    color: var(--subClr);
+    text-align: center
+}
+
+.newsletterContainer {
+    width: 50%;
+    margin: auto
+}
+
+.newsletter p {
+    line-height: 22px;
+    margin: 20px auto
+}
+
+.newsletter button {
+    background: var(--subClr);
+    color: var(--light);
+    border: 1px solid var(--subClr);
+    font-size: 20px
+}
+
+.newsletter button:hover {
+    color: var(--subClr);
+    background: var(--light)
+}
+
+
+@media (max-width: 1100px) {
+    .newsletterContainer {
+        width: 60%
+    }
+}
+
+@media (max-width: 900px) {
+    .newsletterContainer {
+        width: 70%
+    }
+}
+
+@media (max-width: 800px) {
+    .newsletterContainer {
+        width: 80%
+    }
+}
+
+@media (max-width: 700px) {
+    .newsletterContainer {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletterContainer {
+        width: 98%
+    }
+}
+
+/* End Newsletter */
+
+/***************************************** End Home Page *****************************************/

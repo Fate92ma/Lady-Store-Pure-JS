@@ -1,0 +1,76 @@
+/************************************* Start Profile Page *************************************/
+
+/* Start Profile */
+
+.userProfile {
+    margin: 150px auto 100px
+}
+
+.userInfo {
+    border-radius: 8px;
+    padding: 10px;
+    background: var(--light);
+    width: 50%;
+    text-align: center;
+    margin: 10px auto
+}
+
+.userCard h3 {
+    font-size: 32px
+}
+
+.userCard p {
+    font-size: 20px;
+    color: var(--subClr);
+    margin-top: 14px
+}
+
+.userCard p b {
+    color: var(--dark)
+}
+
+.userCard a {
+    font-weight: bold;
+    color: var(--price)
+}
+
+.userCard a.home {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 14px
+}
+
+@media (max-width: 1100px) {
+    .userInfo {
+        width: 60%
+    }
+}
+
+@media (max-width: 900px) {
+    .userInfo {
+        width: 70%
+    }
+}
+
+@media (max-width: 800px) {
+    .userInfo {
+        width: 80%
+    }
+}
+
+@media (max-width: 700px) {
+    .userInfo {
+        width: 90%
+    }
+}
+
+@media (max-width: 600px) {
+    .userInfo {
+        width: 96%
+    }
+}
+
+/* End Profile */
+
+/************************************* End Profile Page *************************************/
