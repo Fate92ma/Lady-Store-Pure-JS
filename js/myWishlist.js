@@ -16,8 +16,6 @@ myHearts.addEventListener("click", heartsOnAction);
 
 clearWishlist.addEventListener("click", unHeartAll);
 
-/**************************************************************************************************/
-
 // function to check user and length of favCart
 function checkHearts() {
 
@@ -37,8 +35,6 @@ function checkHearts() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when the viewer of the page is not a user
 function noUserFound() {
 
@@ -48,8 +44,6 @@ function noUserFound() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when favcart is empty
 function noHeartsFound() {
 
@@ -58,8 +52,6 @@ function noHeartsFound() {
     clearWishlist.remove()
 
 }
-
-/**************************************************************************************************/
 
 // function to display data in dom
 function displayInDom(array, whereToDisplay) {
@@ -96,8 +88,6 @@ function displayInDom(array, whereToDisplay) {
 
 }
 
-/**************************************************************************************************/
-
 // on click on the div that holds wishlist items
 
 // function to update the wishlist item based on "target"
@@ -120,8 +110,6 @@ function heartsOnAction(event) {
 
 }
 
-/**************************************************************************************************/
-
 // function to remove item from localStorage and dom
 function unHeartItem(id) {
 
@@ -140,8 +128,6 @@ function unHeartItem(id) {
 
 }
 
-/**************************************************************************************************/
-
 // function to update lenght in dom
 function updateSpan(favCart) {
 
@@ -149,16 +135,12 @@ function updateSpan(favCart) {
 
 }
 
-/**************************************************************************************************/
-
 // function to update localStorage on change
 function saveFavCart(favCart) {
 
     localStorage.setItem("addedToFav", JSON.stringify(favCart))
 
 }
-
-/**************************************************************************************************/
 
 // function to clear all items from wishlist
 function unHeartAll() {
@@ -182,5 +164,3 @@ function unHeartAll() {
     noHeartsFound()
 
 }
-
-/**************************************************************************************************/

@@ -6,8 +6,6 @@ let IsUserFound = localStorage.getItem("username"),
 
     favCart = localStorage.getItem("addedToFav") ? JSON.parse(localStorage.getItem("addedToFav")) : [];
 
-/**************************************************************************************************/
-
 // if there is item "key:value" saved in localStorage with the key "addedToFav"
 // if true
 if (favCart) {
@@ -15,8 +13,6 @@ if (favCart) {
     // update the count
     updateSpan(favCart)
 }
-
-/**************************************************************************************************/
 
 // function to add item clicked to "addedToFav" in localStorage
 function addToFavBtn() {
@@ -40,7 +36,7 @@ function addToFavBtn() {
             heart.disabled = true;
 
             // change its text
-            heart.innerText =  `❤︎`
+            heart.innerText = `❤︎`
 
         }
 
@@ -62,7 +58,7 @@ function addToFavBtn() {
                 event.target.disabled = true;
 
                 // change its text
-                event.target.innerText =  `❤︎`
+                event.target.innerText = `❤︎`
 
                 // get the item clicked by id
                 let redItem = toHeartItem(id);
@@ -83,8 +79,6 @@ function addToFavBtn() {
 
 }
 
-/**************************************************************************************************/
-
 // function to get item clicked by id
 function toHeartItem(id) {
 
@@ -102,8 +96,6 @@ function toHeartItem(id) {
 
 }
 
-/**************************************************************************************************/
-
 // update "addedToFav" in localStorage
 function saveFavCart(favCart) {
 
@@ -111,13 +103,9 @@ function saveFavCart(favCart) {
 
 }
 
-/**************************************************************************************************/
-
 // function to update length based on "addedToFav" length
 function updateSpan(favCart) {
 
     favCountSapn.innerText = `${favCart.length}`
 
 }
-
-/**************************************************************************************************/

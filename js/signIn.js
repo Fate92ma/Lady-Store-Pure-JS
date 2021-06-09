@@ -20,12 +20,8 @@ checkInput.addEventListener("click", togglePass);
 
 in_signIn.addEventListener("click", checkAndSignIn);
 
-/**************************************************************************************************/
-
 // prevent refresh on submit form
 form.addEventListener("submit", (event) => event.preventDefault())
-
-/**************************************************************************************************/
 
 // function to show and hide password
 function togglePass() {
@@ -49,8 +45,6 @@ function togglePass() {
     }
 
 }
-
-/**************************************************************************************************/
 
 // function to check inputs and data
 function checkAndSignIn() {
@@ -77,5 +71,3 @@ function checkAndSignIn() {
     }
 
 }
-
-/**************************************************************************************************/

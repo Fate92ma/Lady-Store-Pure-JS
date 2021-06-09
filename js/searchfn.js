@@ -8,8 +8,6 @@ let input = document.getElementById("input"),
 
 input.addEventListener("keyup", searchForItem);
 
-/**************************************************************************************************/
-
 // function to search in all products
 function searchForItem() {
 
@@ -22,5 +20,3 @@ function searchForItem() {
     displayInDom(searchResult, displayProducts)
 
 }
-
-/**************************************************************************************************/

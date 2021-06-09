@@ -22,10 +22,7 @@ go4nails.addEventListener("click", getNailsCosmetic);
 
 go4all.addEventListener("click", getData);
 
-/**************************************************************************************************/
-
 // set active class on click
-
 for (let i = 0; i < goList.length; i++) {
 
     goList[i].onclick = function () {
@@ -39,8 +36,6 @@ for (let i = 0; i < goList.length; i++) {
     }
 }
 
-/**************************************************************************************************/
-
 // function to get all products related to nails
 function getNailsCosmetic() {
 
@@ -51,8 +46,6 @@ function getNailsCosmetic() {
     displayInDom(goResult, displayProducts)
 
 }
-
-/**************************************************************************************************/
 
 // function to get all products related to face
 function getFaceCosmetic() {
@@ -65,8 +58,6 @@ function getFaceCosmetic() {
 
 }
 
-/**************************************************************************************************/
-
 // function to get all products related to lips
 function getLipsCosmetic() {
 
@@ -77,5 +68,3 @@ function getLipsCosmetic() {
     displayInDom(goResult, displayProducts)
 
 }
-
-/**************************************************************************************************/

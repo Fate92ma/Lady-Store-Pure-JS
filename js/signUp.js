@@ -22,12 +22,8 @@ checkInput.addEventListener("click", togglePass);
 
 up_signUp.addEventListener("click", checkAndSave);
 
-/**************************************************************************************************/
-
 // prevent refresh on submit form
 form.addEventListener("submit", (event) => event.preventDefault())
-
-/**************************************************************************************************/
 
 // function to show and hide password
 function togglePass() {
@@ -51,8 +47,6 @@ function togglePass() {
     }
 
 }
-
-/**************************************************************************************************/
 
 // function to save user data in localStorage
 function checkAndSave() {
@@ -117,5 +111,3 @@ function checkAndSave() {
 
     }
 }
-
-/**************************************************************************************************/

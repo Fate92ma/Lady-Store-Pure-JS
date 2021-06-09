@@ -24,8 +24,6 @@ clearCart.addEventListener("click", clearAllItems);
 
 toCheckOut.addEventListener("click", toCheckOutfn);
 
-/**************************************************************************************************/
-
 // function to check user and length of myCart
 function checkMyCart() {
 
@@ -45,8 +43,6 @@ function checkMyCart() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when the viewer of the page is not a user
 function notUser() {
 
@@ -54,16 +50,12 @@ function notUser() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when myCart is empty
 function emptyCart() {
 
     myCartInfo.innerHTML = `<center>Your Cart Is Empty.</center>`
 
 }
-
-/**************************************************************************************************/
 
 // function to run when mycart is full
 function cartIsFound() {
@@ -82,8 +74,6 @@ function cartIsFound() {
     })
 
 }
-
-/**************************************************************************************************/
 
 // function to sum the price of all items added to localStorage and get its lenght
 function setCartValues(cart) {
@@ -110,8 +100,6 @@ function setCartValues(cart) {
 
 }
 
-/**************************************************************************************************/
-
 // function to display item in mini cart div on click to add to localStorage
 function miniItem(item) {
 
@@ -134,8 +122,6 @@ function miniItem(item) {
 
 }
 
-/**************************************************************************************************/
-
 // function to remove item from "addToCart" in localStorage
 function removeItemfn(id) {
 
@@ -153,8 +139,6 @@ function removeItemfn(id) {
     if (myCart.length == 0) emptyCart()
 
 }
-
-/**************************************************************************************************/
 
 // on click on the div that holds all the cart info
 
@@ -239,8 +223,6 @@ function actionOnItem(event) {
     }
 }
 
-/**************************************************************************************************/
-
 // function to remove all items from localStorage and dom
 function clearAllItems() {
 
@@ -273,8 +255,6 @@ function clearAllItems() {
     emptyCart()
 }
 
-/**************************************************************************************************/
-
 // function to update cart in localStorage
 function saveCart(cart) {
 
@@ -282,13 +262,9 @@ function saveCart(cart) {
 
 }
 
-/**************************************************************************************************/
-
 // function to go to check out page
 function toCheckOutfn() {
 
     window.location = "checkOut.html"
 
 }
-
-/**************************************************************************************************/

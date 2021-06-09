@@ -3,7 +3,7 @@
 /* Start Home */
 
 .home {
-    background-image: url(../img/home/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh
@@ -49,7 +49,7 @@
     cursor: pointer
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .preHeader {
         text-align: center;
         flex-direction: column
@@ -177,7 +177,7 @@
     color: var(--subClr)
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .products_card {
         width: 60%
     }
@@ -187,15 +187,9 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .products_card {
         width: 70%
-    }
-}
-
-@media (max-width: 800px) {
-    .products_card {
-        width: 80%
     }
 
     .myProduct {
@@ -203,15 +197,11 @@
     }
 }
 
-@media (max-width: 700px) {
-    .products_card {
-        width: 90%
-    }
-}
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {
-    .products_card {
-        width: 94%
+    .products_card,
+    .productBtns {
+        width: 96%
     }
 
     .myProduct {
@@ -229,12 +219,6 @@
 
     .goList li:last-child {
         margin-bottom: 0
-    }
-}
-
-@media (max-width: 350px) {
-    .productBtns {
-        width: 99%
     }
 }
 
@@ -271,34 +255,27 @@
     background: var(--light)
 }
 
-
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .newsletterContainer {
         width: 60%
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .newsletterContainer {
         width: 70%
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .newsletterContainer {
         width: 80%
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .newsletterContainer {
-        width: 90%
-    }
-}
-
-@media (max-width: 600px) {
-    .newsletterContainer {
-        width: 98%
+        width: 96%
     }
 }
 

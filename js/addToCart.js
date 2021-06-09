@@ -2,17 +2,13 @@
 
 let myCart = localStorage.getItem("addedToCart") ? JSON.parse(localStorage.getItem("addedToCart")) : [];
 
-/**************************************************************************************************/
-
 // if there is item "key:value" saved in localStorage with the key "addedToCart"
 // if true
 if (myCart) {
-    
+
     // update the count
     setCount(myCart)
 }
-
-/**************************************************************************************************/
 
 // function to add item clicked to "addedToCart" in localStorage
 function addToCartBtn() {
@@ -31,14 +27,14 @@ function addToCartBtn() {
 
         // if true
         if (alreadyAdded) {
-            
+
             // disable ability to click
             btn.disabled = true;
-            
+
             // change its text
             btn.innerText = "Added";
         }
-        
+
         // if false do nothing
 
         // on click at any buuton
@@ -49,7 +45,7 @@ function addToCartBtn() {
             if (!IsUserFound) {
                 window.location = "signUp.html"
             }
-            
+
             // if the click from user
             else {
 
@@ -79,8 +75,6 @@ function addToCartBtn() {
 
 }
 
-/**************************************************************************************************/
-
 // function to get item clicked by id
 function itemToBuy(id) {
 
@@ -98,16 +92,12 @@ function itemToBuy(id) {
 
 }
 
-/**************************************************************************************************/
-
 // update "addedToCart" in localStorage
 function saveCart(cart) {
 
     localStorage.setItem("addedToCart", JSON.stringify(cart))
 
 }
-
-/**************************************************************************************************/
 
 // function to get length of item.count
 function setCount(cart) {
@@ -122,5 +112,3 @@ function setCount(cart) {
 
     itemsCountSapn.innerText = `${tempCount}`
 }
-
-/**************************************************************************************************/

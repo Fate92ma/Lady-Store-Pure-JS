@@ -46,37 +46,29 @@
     background: var(--white)
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .inputs {
         width: 60%
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .inputs {
         width: 70%
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .inputs {
         width: 80%
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .inputs {
-        width: 90%
+        width: 96%
     }
-}
 
-@media (max-width: 600px) {
-    .inputs {
-        width: 98%
-    }
-}
-
-@media (max-width: 350px) {
     .order {
         margin: 14px auto;
         flex-direction: column

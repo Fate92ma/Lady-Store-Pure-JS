@@ -64,37 +64,29 @@ button.quickView:hover {
     width: 200px
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .myHearts {
         width: 60%
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .myHearts {
         width: 70%
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .myHearts {
         width: 80%
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .myHearts {
-        width: 90%
+        width: 96%
     }
-}
 
-@media (max-width: 600px) {
-    .myHearts {
-        width: 98%
-    }
-}
-
-@media (max-width: 500px) {
     .favItem {
         flex-direction: column
     }

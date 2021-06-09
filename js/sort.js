@@ -18,8 +18,6 @@ topRating.addEventListener("click", getTopRated);
 
 avaiClrs.addEventListener("click", getColors);
 
-/**************************************************************************************************/
-
 // function to sort data by price from low to high
 function ascendingSort() {
 
@@ -32,8 +30,6 @@ function ascendingSort() {
     displayInDom(goResult, displayProducts)
 
 }
-
-/**************************************************************************************************/
 
 // function to sort data by price from high to low
 function descendingSort() {
@@ -48,8 +44,6 @@ function descendingSort() {
 
 }
 
-/**************************************************************************************************/
-
 // function to sort data by rating from top to low
 function getTopRated() {
 
@@ -63,11 +57,9 @@ function getTopRated() {
 
 }
 
-/**************************************************************************************************/
-
 // function to sort data by color lenght
 function getColors() {
-    
+
     parsedData = JSON.parse(localStorage.getItem("myData"));
 
     goResult = parsedData.sort((a, b) => {
@@ -75,7 +67,5 @@ function getColors() {
     })
 
     displayInDom(goResult, displayProducts)
-    
-}
 
-/**************************************************************************************************/
+}

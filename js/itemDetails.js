@@ -14,16 +14,12 @@ let itemDetails = document.getElementsByClassName("itemDetails")[0],
 
 window.addEventListener("load", checkCart);
 
-/**************************************************************************************************/
-
 // function to check if there is clicked item to view or not
 function checkCart() {
 
     if (!idOfClick) itemDetails.innerHTML = `<center>Click On Any Product To View In This Page.</center>`
 
 }
-
-/**************************************************************************************************/
 
 // function to convert rating numbers to stars
 function getStars(rating) {
@@ -46,8 +42,6 @@ function getStars(rating) {
     return output.join('');
 
 }
-
-/**************************************************************************************************/
 
 // function to display the item clicked it item details page
 function displayInDom(item, whereToDisplay) {
@@ -80,5 +74,3 @@ function displayInDom(item, whereToDisplay) {
 }
 
 displayInDom(TheItem, itemDetails);
-
-/**************************************************************************************************/

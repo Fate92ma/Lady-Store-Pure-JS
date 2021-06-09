@@ -19,7 +19,7 @@ let userOrNot = localStorage.getItem("username"),
     input = [...document.getElementsByTagName("input")],
 
     checkInputs,
-    
+
     fees = document.getElementsByClassName("fees")[0];
 
 // Events
@@ -27,8 +27,6 @@ let userOrNot = localStorage.getItem("username"),
 window.addEventListener("load", checkCart);
 
 purchase.addEventListener("click", checkAndBuy);
-
-/**************************************************************************************************/
 
 // function to check if there is item added to cart 
 function checkCart() {
@@ -45,11 +43,9 @@ function checkCart() {
         // if not empty
         // display its data in dom
         else displayInDom(toOrder, orderInfo, orderTotal)
-        
+
     }
 }
-
-/**************************************************************************************************/
 
 // function to write a msg when the viewer of the page is not a user
 function notUser() {
@@ -58,16 +54,12 @@ function notUser() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when cart is empty
 function nothingToShip() {
 
     inputs.innerHTML = `<center>You Don't Have Products To Ship.</center>`
 
 }
-
-/**************************************************************************************************/
 
 // function to display data in dom
 function displayInDom(array, whereToDisplay, viewMoney) {
@@ -95,16 +87,14 @@ function displayInDom(array, whereToDisplay, viewMoney) {
     whereToDisplay.innerHTML = getResult;
 
     viewMoney.innerHTML = `<p class="order">Total: <span class="price">${tempTotal.toFixed(2)}$</span></p>`
-    
+
     //
     if (tempTotal >= 250) fees.innerHTML = `<strong>FREE Shipping</strong>`
-    
+
     //
     else fees.innerHTML = `Shipping Cost <strong>40$</strong>`
 
 }
-
-/**************************************************************************************************/
 
 // function on click to buy items
 function onPurchase() {
@@ -125,8 +115,6 @@ function onPurchase() {
 
 }
 
-/**************************************************************************************************/
-
 // function to check input on click to buy
 function checkAndBuy() {
 
@@ -139,5 +127,3 @@ function checkAndBuy() {
     else onPurchase()
 
 }
-
-/**************************************************************************************************/

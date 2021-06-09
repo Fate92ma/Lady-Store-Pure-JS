@@ -16,8 +16,6 @@ let global_list = document.getElementById("global_list"),
 
 signOut.addEventListener("click", byeBye)
 
-/**************************************************************************************************/
-
 // if user data is found in localStorage
 if (checkUser && checkPass) {
 
@@ -28,8 +26,6 @@ if (checkUser && checkPass) {
     userDom.innerText = `${checkUser}`
 
 }
-
-/**************************************************************************************************/
 
 // function to sign out and clear data from localStorage
 function byeBye() {
@@ -51,5 +47,3 @@ function byeBye() {
     setTimeout(() => location.reload(true), 500)
 
 }
-
-/**************************************************************************************************/

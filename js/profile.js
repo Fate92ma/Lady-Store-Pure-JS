@@ -22,8 +22,6 @@ let isUser = localStorage.getItem("username"),
 
 window.addEventListener("load", checkUserFn);
 
-/**************************************************************************************************/
-
 // function
 function checkUserFn() {
 
@@ -48,16 +46,12 @@ function checkUserFn() {
 
 }
 
-/**************************************************************************************************/
-
 // function to write a msg when the viewer of the page is not a user
 function noUserFound() {
 
     userInfo.innerHTML = `<center>You Don't Have Permission To View This Page.</center>`
 
 }
-
-/**************************************************************************************************/
 
 // function to check user gender
 function getGender() {
@@ -69,8 +63,6 @@ function getGender() {
     else return "🐵"
 
 }
-
-/**************************************************************************************************/
 
 // function to get item.count of items in "myCart"
 function countCart() {
@@ -93,8 +85,6 @@ function countCart() {
 
 }
 
-/**************************************************************************************************/
-
 // function to get length of items in "myWishlist"
 function countHearts() {
 
@@ -103,5 +93,3 @@ function countHearts() {
     else return parsedUserFav.length
 
 }
-
-/**************************************************************************************************/

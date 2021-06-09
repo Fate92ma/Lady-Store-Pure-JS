@@ -12,8 +12,6 @@ let displayProducts = document.getElementById("displayProducts"),
 
 window.addEventListener("load", getData);
 
-/**************************************************************************************************/
-
 // function to get data from json file
 function getData() {
 
@@ -40,8 +38,6 @@ function getData() {
     myRequest.send()
 
 }
-
-/**************************************************************************************************/
 
 // function to display data in dom
 function displayInDom(array, whereToDisplay) {
@@ -83,5 +79,3 @@ function displayInDom(array, whereToDisplay) {
     toQuickView();
 
 }
-
-/**************************************************************************************************/

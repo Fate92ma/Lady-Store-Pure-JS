@@ -22,8 +22,6 @@ window.onscroll = imScrolling;
 
 goTop.addEventListener("click", goToTop);
 
-/**************************************************************************************************/
-
 // function to apply new setting on smaller screen
 function miniDom() {
 
@@ -35,16 +33,12 @@ function miniDom() {
 
 }
 
-/**************************************************************************************************/
-
 // function to redirect to hom
 function goHome() {
 
     window.location = "index.html"
 
 }
-
-/**************************************************************************************************/
 
 // function to hide and display elements based on scroll Offset
 function imScrolling() {
@@ -55,8 +49,6 @@ function imScrolling() {
 
 }
 
-/**************************************************************************************************/
-
 // function to go to top of the page
 function goToTop() {
 
@@ -66,5 +58,3 @@ function goToTop() {
     })
 
 }
-
-/**************************************************************************************************/

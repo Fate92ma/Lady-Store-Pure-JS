@@ -24,8 +24,6 @@ saveEdits.addEventListener("click", updateMyInfo);
 
 backProfile.addEventListener("click", toProfile);
 
-/**************************************************************************************************/
-
 // function to check if user is found or not
 function checkUserFn() {
 
@@ -33,12 +31,8 @@ function checkUserFn() {
 
 }
 
-/**************************************************************************************************/
-
 // prevent refresh on submit form
 form.addEventListener("submit", (event) => event.preventDefault())
-
-/**************************************************************************************************/
 
 // function to write a msg when the viewer of the page is not a user
 function noUserFound() {
@@ -46,8 +40,6 @@ function noUserFound() {
     formInputs.innerHTML = `<center>You Don't Have Permission To View This Page.</center>`
 
 }
-
-/**************************************************************************************************/
 
 // function to edit input value
 function updateInfo(name, value) {
@@ -59,8 +51,6 @@ function updateInfo(name, value) {
     else localStorage.setItem(name, myValue)
 
 }
-
-/**************************************************************************************************/
 
 // function to update user info and redirect to profile page
 function updateMyInfo() {
@@ -76,12 +66,8 @@ function updateMyInfo() {
 
 }
 
-/**************************************************************************************************/
-
 // function to redirect to profile page
 function toProfile() {
 
     window.location = "profile.html"
 }
-
-/**************************************************************************************************/
